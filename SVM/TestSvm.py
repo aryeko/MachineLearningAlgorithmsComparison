@@ -82,7 +82,7 @@ def run_svm_e2e(x_train, y_train, x_test, y_test, kernel="rbf", C=1.0):
     clf = get_trained_svm(kernel, C, x_train, y_train)
     test_svm(clf, x_test, y_test)
     print("Total time is: %.3f seconds" % (time.time() - start))
-
+'''
 if __name__ == "__main__":
     # Read the data
     print("Reading the data from csv")
@@ -174,3 +174,5 @@ if __name__ == "__main__":
     run_svm_e2e(x_train, y_train, x_test, y_test, "sigmoid", 1.0)
     print("\n****************************\n")
     run_svm_e2e(x_train, y_train, x_test, y_test, "sigmoid", 5)
+
+'''
